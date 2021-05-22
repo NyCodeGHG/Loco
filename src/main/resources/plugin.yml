@@ -1,0 +1,8 @@
+name: Minerailed
+author: warriorzz
+version: 0.0.1
+main: com.github.warriorzz.loco.MineRailed
+api-version: 1.16
+commands:
+  spawn:
+    description: motrßdsijg d
