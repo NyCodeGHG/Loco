@@ -1,6 +1,5 @@
 plugins {
-    java
-    kotlin("jvm") version "1.5.0"
+    kotlin("jvm") version "1.5.10"
     id("com.github.johnrengelman.shadow") version "7.0.0"
 }
 
@@ -14,8 +13,8 @@ repositories {
 }
 
 dependencies {
-    implementation("net.axay", "kspigot", "1.16.26")
-    compileOnly("org.spigotmc:spigot:1.16.5-R0.1-SNAPSHOT")
+    implementation("net.axay", "kspigot", "1.16.27")
+    compileOnly("org.spigotmc", "spigot", "1.16.5-R0.1-SNAPSHOT")
 }
 
 tasks {

@@ -13,11 +13,11 @@ class Wagon(entityTypes: EntityTypes<*>, world: World) : EntityMinecartRideable(
     private var spawned = false
 
     constructor(location: Location, wagonType: WagonType) : this(EntityTypes.MINECART, (location.world as CraftWorld).handle.minecraftWorld) {
-        customName = ChatComponentText(wagonType.name)
+        customName = ChatComponentText(wagonType.wagonName)
         customNameVisible = true
 
         glowing = true
-        displayBlock = Block.getByCombinedId(wagonType.b)
+        displayBlock = Block.getByCombinedId(wagonType.blockId)
 
 
     }
