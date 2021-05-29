@@ -15,10 +15,13 @@ jobs:
       - name: Cache Gradle packages
         uses: actions/cache@v2
         with:
-          key: "$GITHUB_SHA"
+          key: loco-${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle.kts', '**/gradle-wrapper.properties') }}
           path: |
             ~/builds
             ~/build
             ~/.gradle
+            ~/.m2
+      - name: Download, Compile and Install Paper
+        run:  ./paper-nms.sh
       - name: Build with Gradle
-        run: chmod +x ./gradlew && ./gradlew compileKotlin compileJava
+        run: ./gradlew assemble
