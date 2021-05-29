@@ -7,4 +7,4 @@ This project was first created by @DerBanko and @Dweags (at least i saw it in th
 This project is in WIP and is far away from production.
 
 Oh, if I didn't told you already:
-<iframe src="https://open.spotify.com/embed/track/6osaMSJh9NguagEDQcZaKx" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<a href="https://open.spotify.com/embed/track/6osaMSJh9NguagEDQcZaKx">This</a> was part of development ![KappaW](https://cdn.betterttv.net/emote/5ebeb6a3f0fb3f168c4b7714/1x)
