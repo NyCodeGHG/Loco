@@ -1,9 +1,10 @@
 package com.github.warriorzz.loco.wagon.utils
 
-import net.axay.kspigot.chat.KColors
+import net.kyori.adventure.text.Component
+import net.kyori.adventure.text.TextComponent
 
-enum class WagonType(val wagonName: String, val blockId: Int) {
+enum class WagonType(val wagonName: TextComponent, val blockId: Int) {
 
-    LOCO("${KColors.RED}LOCO", 120);
+    LOCO(Component.text("LOCO"), 120);
 
 }

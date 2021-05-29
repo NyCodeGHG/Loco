@@ -14,7 +14,7 @@ repositories {
 
 dependencies {
     implementation("net.axay", "kspigot", "1.16.27")
-    compileOnly("org.spigotmc", "spigot", "1.16.5-R0.1-SNAPSHOT")
+    compileOnly("com.destroystokyo.paper", "paper", "1.16.5-R0.1-SNAPSHOT")
 }
 
 tasks {
