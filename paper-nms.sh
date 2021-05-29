@@ -3,8 +3,10 @@
 MINECRAFT_VERSION="1.16.5"
 
 function installPaper() {
-    git clone https://github.com/PaperMC/Paper.git ~/Paper
-    ~/Paper/paper install
+  git config --global user.name "GitHub Runner"
+  git config --global user.email "noreply@github.com"
+  git clone https://github.com/PaperMC/Paper.git ~/Paper
+  ~/Paper/paper install
 }
 
 if [ ! -f ~/.m2/repository/com/destroystokyo/paper/paper/$MINECRAFT_VERSION-R0.1-SNAPSHOT/paper-$MINECRAFT_VERSION-R0.1-SNAPSHOT.jar ]; then
